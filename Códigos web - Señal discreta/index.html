@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>DSP RGB Analyzer</title>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top">
+
+            <h1>Detector de colores</h1>
+
+            <button id="btn">
+                Conectar Arduino
+            </button>
+
+        </div>
+
+        <div class="estado" id="estado">
+            🔴 Arduino desconectado
+        </div>
+
+        <div class="main">
+
+            <div class="sidebar">
+
+                <h2>Color Detectado</h2>
+
+                <div class="colorBox"
+                id="colorBox"></div>
+
+                <div class="rgb r" id="r">
+                    R = 0
+                </div>
+
+                <div class="rgb g" id="g">
+                    G = 0
+                </div>
+
+                <div class="rgb b" id="b">
+                    B = 0
+                </div>
+
+            </div>
+
+            <div id="grafica"></div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
